@@ -3,8 +3,6 @@ export const handleDragStart = (index) => {
 };
 
 export const handleDragOver = (index, tasks, setTasks) => {
-  const draggedOverTask = tasks[index];
-
   if (window.draggedTaskIndex === index) return;
 
   const newTasks = tasks.filter((_, idx) => idx !== window.draggedTaskIndex);

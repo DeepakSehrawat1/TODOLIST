@@ -11,7 +11,7 @@ const List = ({ listItem, itemIndex, tasks, setTasks }) => {
 
   function deleteTask() {
     const tasks1 = tasks.filter((item, index1) => {
-      return index1 != itemIndex;
+      return index1 !== itemIndex;
     });
 
     setTasks(tasks1);
